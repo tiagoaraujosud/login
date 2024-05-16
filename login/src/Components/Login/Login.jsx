@@ -18,13 +18,13 @@ const Login = () => {
         <div className="container">
             <form onSubmit={handleSubmit}>
                 <h1>Login Page</h1>
-                <div>
+                <div className="input-field">
                     <input type="email" placeholder="E-mail" onChange={(e) => setUsername(e.target.value)}/>
-                    <FaUser />
+                    <FaUser className="icon"/>
                 </div>
-                <div>
+                <div className="input-field">
                     <input type="password" placeholder="Password" onChange={(e) => setPassword(e.target.value)}/>
-                    <FaLock />
+                    <FaLock className="icon"/>
                 </div>
 
                 <div className="recall-forget">
